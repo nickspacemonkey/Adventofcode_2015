@@ -47,7 +47,7 @@ def getInput():
         instructions.append(instruction)
     return instructions
 
-
+#Funtion that looks at each list and actions accordingly
 def turnLights(coords):
     for x in coords:
         if x[0] == 'toggle':
