@@ -57,14 +57,19 @@ def turnLights(coords):
         elif x[0] == 'off':
             lights.turnOff(x[1], x[2], x[3]+1, x[4]+1)
 
-if __name__ == "__main__":
-    lights = Grid()
-    coords = getInput()
-    turn = turnLights(coords)
-
+def count():
     # Count to check how many lights are on in the dictionary.
     count = 0
     for coord, state in lights.lightgrid.items():
         count += state
+    return count
 
-    print(count)
+def main():
+    turn = turnLights(coords)
+    print(count())
+
+lights = Grid()
+coords = getInput()
+
+if __name__ == "__main__":
+    main()
