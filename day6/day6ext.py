@@ -47,7 +47,7 @@ def getInput():
         instructions.append(instruction)
     return instructions
 
-
+# Function that changes the state of lights accordingly
 def turnLights(coords):
     for x in coords:
         if x[0] == 'toggle':
@@ -61,7 +61,6 @@ if __name__ == "__main__":
     lights = Grid()
     coords = getInput()
     turn = turnLights(coords)
-
 
     # Count to check how many lights are on in the dictionary.
     count = 0
