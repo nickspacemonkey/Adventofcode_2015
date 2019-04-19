@@ -12,11 +12,7 @@ def main(puzzle_input):
         string = puzzle_input + str(count)
         result = hashlib.md5(string.encode())
         hex_result = result.hexdigest()
-        repeat = 0
-        for i in range(6):
-            if hex_result[i] == "0":
-                repeat += 1
-        if repeat == 6:
+        if hex_result.startswith("000000"):
             print(hex_result)
             print(count)
             found = True
