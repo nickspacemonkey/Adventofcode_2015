@@ -10,8 +10,7 @@ def main(puzzle_input):
             print(hex_result)
             print(count)
             break
-        else:
-            count += 1
+        count += 1
 
 if __name__ == '__main__':
     main("ckczppom")
