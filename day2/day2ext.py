@@ -14,12 +14,10 @@ def getInput():
 
 def stringToInt(stringlist):
     intlist = []
-    x = 0
     for i in stringlist:
-        singlelist = stringlist[x]
+        singlelist = i
         singlelist = list(map(int, singlelist))
         intlist.append(singlelist)
-        x+=1
     return(intlist)
 
 # def getSize(dimensions):
